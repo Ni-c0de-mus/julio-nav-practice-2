@@ -2,27 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Multi Level Dropdown</title>
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link href="../css/julio2.css" rel="stylesheet">
+ <meta charset="UTF-8">
+ <meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Multi Level Dropdown</title>
+ <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+ <link href="../css/julio2.css" rel="stylesheet">
 </head>
+
 <body>
-<!--Nav markup goes here-->
+ <!--Nav markup goes here-->
 
-<!--End nav-->
-
-<!--Hero-->
-<section class="hero">
-    <div class="text">
-        <h2>Proudly serving</h2>
-        <h1>Delicious Food Daily</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#" class="btn">Learn more</a>
+ <header>
+  <div class="container">
+   <nav>
+    <div class="menu-icons">
+     <i class="icon ion-md-menu"></i>
+     <i class="icon ion-md-close"></i>
     </div>
-</section>
-<script src="../js/julio2.js"></script>
+    <a href="julio.html" class="logo">
+     <i class="icon ion-md-restaurant"></i>
+    </a>
+    <ul class="nav-list">
+     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+     <!-- Menu -->
+     <li class="nav-item"><a href="#" class="nav-link">Menu
+       <i class="icon ion-md-arrow-dropdown"></i>
+      </a>
+      <!-- Sub Menu -->
+      <ul class="sub-menu">
+       <li><a href="#">Breakfast</a></li>
+       <li><a href="#">Lunch<i class="icon ion-md-arrow-dropdown"></i></a>
+        <!--Sub-sub-menu -->
+        <ul class="sub-menu">
+         <li><a href="#">Food</a></li>
+         <li><a href="#">Cakes</a></li>
+         <li><a href="#">More...<i class="icon ion-md-arrow-dropdown"></i></a>
+          <!-- Sub-sub-sub-menu -->
+          <ul class="sub-menu">
+           <li><a href="#">Deserts</a></li>
+           <li><a href="#">Icecreams</a></li>
+           <li><a href="#">Sweets</a></li>
+          </ul>
+         </li>
+        </ul>
+       </li>
+       <li><a href="#">Dinner</a></li>
+      </ul>
+     </li>
+     <li class="nav-item"><a href="#" class="nav-link">Our Chefs</a></li>
+     <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+     <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+     <li class="move-right btn"><a href="#" class="nav-link">Book a Table</a>
+     </li>
+    </ul>
+   </nav>
+  </div>
+ </header>
+
+ <!--End nav-->
+
+ <!--Hero-->
+ <section class="hero">
+  <div class="text">
+   <h2>Proudly serving</h2>
+   <h1>Delicious Food Daily</h1>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+   <a href="#" class="btn">Learn more</a>
+  </div>
+ </section>
+ <script src="../js/julio2.js"></script>
 </body>
+
 </html>
