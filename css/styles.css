@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster|Audiowide|Great+Vibes|Comfortaa|Orbitron|Tajawal|Livvic|Fira+Sans|Unica+One|Rajdhani");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    --great-vibes: 'Great Vibes', cursive;
+ --comfortaa: 'Comfortaa', cursive;
+ --orbitron: 'Orbitron', sans-serif;
+ --audiowide: 'Audiowide', cursive;
+ --rajdhani: 'Rajdhani', sans-serif;
+
+ --metal-sunburn: #A37C40;
+ --carmine-pink: #E54B4B;
+ --raisin-black: #1E1E24;
+ --rifle-green: #444140;
+ --rich-black: #07090F;
+ --cosmic-latte: #FFFCE8;
+ --tuscan-red: #6D454C;
+ --des-cyan: #658E9C;
+ --nav-purple: #4D5382;
+ --pinapple: #514663;
+ --old-gold: #B8B42D;
+ --olivine: #9DAD6F;
+ --quartz: #494850;
+ --gunmetal:  rgba(44, 44, 52, 1);
+ --l-pastel-purple: #b18fcf;
+ --deep-taupe: #7D6D61;
+ --light-taupe: #AD8A64;
+ --black-coral: #5D5F71;
+ --charcoal: #2E4057;
+ --june-bud: #C0D461;
+ --reg-black: #0B0500;
+ --orange-soda: #FE5E41;
+ --key-lime: #D8F1A0;
+ --green-munsell: #00A878;
+ --jet: #2F2F2F rgba(47, 47, 47, 1);
+ --goldenrod-yellow: #F3F9D2;
+ --dark-sienna: #32161F;
+ --mellow-apricot: #F0B67F;
+ --sunset-orange: #FE5F55 rgba(254, 95, 85, 1);
+ --cyan-azure: #4F7CAC rgba(79, 124, 172, 1);
+ --dark-gunmetal: #0D1F2D rgba(13, 31, 45, 1);
+ --caput-mortuum: #502419;
+ --harvest-gold: #E59500;
+ --burgundy: #840032;
+ --ube: #8789C0;
+ --maximum-green: #679436;
+ --limerick: #A5BE00;
+ --turquoise: #45F0DF;
+ --oxford-blue: #111D4A;
+ --dark-puce: #4A2040;
+ --sea-blue: #05668D;
+ --pearly-purple: #9F6BA0;
+ --mid-purple: #C880B7;
+ --classic-rose: #F5CCE8;
+ --black-olive: #393E41 rgba(57, 62, 65, 1);
+ --meat-brown: #E2C044;
+ --wintergreen-dream: #587B7F;
+ --russian-green: #678D58 rgba(103, 141, 88, 1);
+ --laurel-green: #A6C48A;
+ --m-aquamarine: #74D3AE;
+ --african-violet: #B288C0;
+ --d-lavender: #7E5A9B;
+ --cyber-grape: #63458A;
+ --dark-orchid: #9A48D0;
+ --black-coral: #5D5F71 rgba(93, 95, 113, 1);
+}
+
+html {
+    font-family: var(--rajdhani);
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--rajdhani);
+    font-size:  1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: #fff;
+}
+section {
+    padding: 5rem 0;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 5.5rem;
+    /*position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;*/
+}
+
+.container {
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-brand {
+    width: 2rem;
+}
+
+.menu-icons i {
+    font-size: 3.5rem;
+    color: var(--charcoal);
+}
+
+.close i {
+    color:  var(--carmine-pink);
+}
+
+.nav-list {
+    width: 25rem;
+    height: 100vh;
+    background-color: var(--charcoal);
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-list.active {
+    right: 0;
+}
+
+.close {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--cosmic-latte);
+}
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(93, 95, 113, 0.9) 0%, rgba(47, 47, 47, 0.2) 100%), url('../img/lotus-hd.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+}
+
+.main-message {
+    width: 100%;
+    max-width: 50rem;
+    color: var(--cosmic-latte);
+    text-transform: uppercase;
+    transform: translateY(20%);
+}
+
+.main-message h3 {
+    font-size: 1.6rem;
+}
+
+.main-message h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    background-color: #A37C40;
+    border-radius: 2rem;
+    color: var(--cosmic-latte);
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    transition: background-color 650ms;
+}
+
+.btn:hover {
+    background-color: var(--wintergreen-dream);
+}
+
+
+/* Media Queries */
+
+@media screen and ( min-width: 350px) {
+    .main-message{
+        transform: translateY(40%);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        height: 8rem;
+    }
+.nav-brand {
+    width: 3.5rem;
+}
+
+.nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+    flex-direction: row;
+    transition: initial;
+}
+
+.menu-icons {
+    display: none;
+}
+
+.nav-item {
+    margin: 0 2.5rem;
+}
+
+.nav-link,
+.current {
+    color: var(--charcoal);
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.nav-link::before,
+.current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5rem;
+    background-color: var(--cosmic-latte);
+    width: 100%;
+    height: 2px;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform;
+}
+
+.current::before {
+    transform: scaleX(1);
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+
+}
